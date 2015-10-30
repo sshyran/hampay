@@ -24,9 +24,9 @@ class Logger
             if (!is_dir($dir)) {
                 mkdir($dir, 0755, true);
             }
-            error_log(sprintf("%s\t%s\n", $key, $message), 3, $path);
+            error_log(sprintf("%s\t%s\t%s\n", $key, date('Y-m-d H:i:s'), $message), 3, $path);
         } else {
-            error_log(sprintf("%s\t%s\n", $key, $message));
+            error_log(sprintf("%s\t%s\t%s\n", $key, date('Y-m-d H:i:s'), $message));
         }
     }
 }

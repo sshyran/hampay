@@ -2,4 +2,6 @@ doc/
 vendor/
 data/
 credential.json
+credential.min.json
 log/
+

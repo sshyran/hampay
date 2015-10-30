@@ -1,0 +1,5 @@
+doc/
+vendor/
+data/
+credential.json
+log/

@@ -1,0 +1,25 @@
+{
+  "name": "hametuha/hampay",
+  "description": "A PHP library for abstract payment gateway.",
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "^2.8",
+    "phpunit/phpunit": "^4.7"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fumikito",
+      "email": "guy@hametuha.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Hametuha\\HamPay": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.4",
+    "respect/validation": "^1.0"
+  },
+  "minimum-stability": "stable"
+}

@@ -5,9 +5,10 @@ use \Hametuha\HamPay\Pattern\UnitTest;
 class GmoCcTest extends UnitTest
 {
 
-    public function testCreaditCard(){
+    public function testCreaditCard()
+    {
 
-        $order_id = 'tran-'.time();
+        $order_id = 'tran-' . time();
 
         $auth = \Hametuha\HamPay\Service\GMO\Operation\CC\ExecTran::exec([
             'OrderID' => $order_id,

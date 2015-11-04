@@ -3,9 +3,7 @@
 namespace Hametuha\HamPay\Service\GMO\Operation;
 
 
-use Hametuha\HamPay\Service\GMO\Credential;
-use Hametuha\HamPay\Service\GMO\Endpoints;
-use Hametuha\HamPay\Util\i18n;
+use Hametuha\HamPay\Service\GMO\EndPoints;
 
 abstract class Common
 {
@@ -41,9 +39,9 @@ abstract class Common
     public static function exec($params)
     {
         $params = static::preProcess($params);
-        $result = Endpoints::getRequest(static::$entry_point, $params, static::$params);
+        $result = EndPoints::getRequest(static::$entry_point, $params, static::$params);
         if (static::$result_params) {
-            $result = Endpoints::getSpecifiedParams($result, static::$result_params);
+            $result = EndPoints::getSpecifiedParams($result, static::$result_params);
         }
         return static::postProcess($result);
     }

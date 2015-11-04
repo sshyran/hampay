@@ -3,7 +3,7 @@
 namespace Hametuha\HamPay\Service\GMO\Operation\CC;
 
 
-use Hametuha\HamPay\Service\GMO\Endpoints;
+use Hametuha\HamPay\Service\GMO\EndPoints;
 use Hametuha\HamPay\Service\GMO\Operation\Common;
 
 class SaveMember extends Common
@@ -13,5 +13,5 @@ class SaveMember extends Common
 
     protected static $result_params = ['MemberID'];
 
-    protected static $entry_point = Endpoints::SAVE_MEMBER;
+    protected static $entry_point = EndPoints::SAVE_MEMBER;
 }

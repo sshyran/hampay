@@ -3,7 +3,7 @@
 namespace Hametuha\HamPay\Service\GMO\Operation\CC;
 
 
-use Hametuha\HamPay\Service\GMO\Endpoints;
+use Hametuha\HamPay\Service\GMO\EndPoints;
 use Hametuha\HamPay\Service\GMO\Operation\Common;
 
 class DeleteCard extends Common
@@ -15,5 +15,5 @@ class DeleteCard extends Common
 
     protected static $result_params = ['CardSeq'];
 
-    protected static $entry_point = Endpoints::DELETE_CARD;
+    protected static $entry_point = EndPoints::DELETE_CARD;
 }

@@ -7,9 +7,9 @@ use Hametuha\HamPay\Util\Logger;
 use Hametuha\HamPay\Util\Validator;
 
 /**
- * Returns Endpoints
+ * Returns EndPoints
  */
-class Endpoints
+class EndPoints
 {
 
     const ENTRY_TRAN = '/EntryTran.idPass';

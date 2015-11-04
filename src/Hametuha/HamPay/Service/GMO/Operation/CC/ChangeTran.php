@@ -3,7 +3,7 @@
 namespace Hametuha\HamPay\Service\GMO\Operation\CC;
 
 
-use Hametuha\HamPay\Service\GMO\Endpoints;
+use Hametuha\HamPay\Service\GMO\EndPoints;
 use Hametuha\HamPay\Service\GMO\Operation\Common;
 
 class ChangeTran extends Common
@@ -19,6 +19,6 @@ class ChangeTran extends Common
         'Approve', 'TranID', 'TranDate'
     ];
 
-    protected static $entry_point = Endpoints::ALTER_TRAN;
+    protected static $entry_point = EndPoints::ALTER_TRAN;
 
 }

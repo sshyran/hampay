@@ -3,7 +3,9 @@
 namespace Hametuha\HamPay\Service\GMO\Operation\CC;
 
 
-class SearchCard
+use Hametuha\HamPay\Service\GMO\Operation\Common;
+
+class SearchCard extends Common
 {
     protected static $params = [
         'SiteID', 'SitePass', 'MemberID', 'SeqMode'

@@ -2,7 +2,7 @@
 
 namespace Hametuha\HamPay\Service\GMO\Operation\CC;
 
-class AuthTran extends AlterTran
+class ReAuthTran extends AlterTran
 {
 
     protected static $params = [
@@ -12,6 +12,9 @@ class AuthTran extends AlterTran
         'AccessPass' => true,
         'JobCd' => true,
         'Amount' => true,
+        'Tax' => false,
+        'Method' => true,
+        'PayTimes' => false,
     ];
 
 }

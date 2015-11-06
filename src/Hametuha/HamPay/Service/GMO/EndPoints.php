@@ -183,7 +183,9 @@ class EndPoints
                     $param[$key] = Credential::get()->{$prop};
                     break;
                 default:
-                    $param[$key] = $params[$key];
+                    if (isset($params[$key])) {
+                        $param[$key] = $params[$key];
+                    }
                     break;
             }
         }

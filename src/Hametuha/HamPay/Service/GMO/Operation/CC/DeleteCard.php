@@ -10,10 +10,16 @@ class DeleteCard extends Common
 {
 
     protected static $params = [
-        'SiteID', 'SitePass', 'MemberID', 'CardSeq',
+        'SiteID' => true,
+        'SitePass' => true,
+        'MemberID' => true,
+        'SeqMode' => false,
+        'CardSeq' => true,
     ];
 
-    protected static $result_params = ['CardSeq'];
+    protected static $result_params = [
+        'CardSeq' => true,
+    ];
 
     protected static $entry_point = EndPoints::DELETE_CARD;
 }

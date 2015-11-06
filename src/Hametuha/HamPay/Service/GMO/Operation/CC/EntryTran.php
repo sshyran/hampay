@@ -15,10 +15,22 @@ class EntryTran extends Common
 {
 
     protected static $params = [
-        'ShopID', 'ShopPass', 'OrderID', 'JobCd', 'Amount',
+        'ShopID' => true,
+        'ShopPass' => true,
+        'OrderID' => true,
+        'JobCd' => true,
+        'ItemCode' => false,
+        'Amount' => true,
+        'Tax' => false,
+        'TdFlag' => false,
+        'TdTenantName' => false,
+
     ];
 
-    protected static $result_params = ['AccessID', 'AccessPass'];
+    protected static $result_params = [
+        'AccessID' => true,
+        'AccessPass' => true,
+    ];
 
     protected static $entry_point = EndPoints::ENTRY_TRAN;
 

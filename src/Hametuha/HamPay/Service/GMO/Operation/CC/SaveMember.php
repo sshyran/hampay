@@ -9,9 +9,16 @@ use Hametuha\HamPay\Service\GMO\Operation\Common;
 class SaveMember extends Common
 {
 
-    protected static $params = ['SiteID', 'SitePass', 'MemberID'];
+    protected static $params = [
+        'SiteID' => true,
+        'SitePass' => true,
+        'MemberID' => true,
+        'MemberName' => false,
+    ];
 
-    protected static $result_params = ['MemberID'];
+    protected static $result_params = [
+        'MemberID' => true,
+    ];
 
     protected static $entry_point = EndPoints::SAVE_MEMBER;
 }

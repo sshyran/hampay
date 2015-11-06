@@ -16,7 +16,6 @@ use Respect\Validation\Validator;
  * @property-read string $shop_pass
  * @property-read string $site_id
  * @property-read string $site_pass
- * @property-read bool $sandbox
  */
 class Credential extends CredentialBase
 {

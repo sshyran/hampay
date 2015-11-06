@@ -9,13 +9,21 @@ class SaveTradedCard extends Common
 {
 
     protected static $params = [
-        'ShopID', 'ShopPass',
-        'OrderID', 'SiteID', 'SitePass',
-        'MemberID',
+        'ShopID' => true,
+        'ShopPass' => true,
+        'OrderID' => true,
+        'SiteID' => true,
+        'SitePass' => true,
+        'MemberID' => true,
+        'SeqMode' => false,
+        'DefaultFlag' => false,
+        'HolderName' => false,
     ];
 
     protected static $result_params = [
-        'CardSeq', 'CardNo', 'Forward',
+        'CardSeq' => true,
+        'CardNo' => false,
+        'Forward' => false,
     ];
 
     protected static $entry_point = EndPoints::TRADED_CARD;

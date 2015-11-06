@@ -22,7 +22,7 @@ class Validator
     public static function lack(array $params, array $required_keys = [])
     {
         $errors = [];
-        foreach ($required_keys as $key) {
+        foreach ($required_keys as $key => $required) {
             switch ($key) {
                 case 'SiteID':
                 case 'SitePass':
@@ -31,7 +31,7 @@ class Validator
                     // do nothing
                     break;
                 default:
-                    if (!isset($params[$key])) {
+                    if ($required && !isset($params[$key])) {
                         $errors[] = $key;
                     }
                     break;

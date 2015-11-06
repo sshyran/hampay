@@ -10,13 +10,20 @@ class AlterTran extends Common
 {
 
     protected static $params = [
-        'ShopID', 'ShopPass', 'AccessID', 'AccessPass',
-        'JobCd'
+        'ShopID' => true,
+        'ShopPass' => true,
+        'AccessID' => true,
+        'AccessPass' => true,
+        'JobCd' => true,
     ];
 
     protected static $result_params = [
-        'AccessID', 'AccessPass', 'Forward',
-        'Approve', 'TranID', 'TranDate'
+        'AccessID' => true,
+        'AccessPass' => true,
+        'Forward' => false,
+        'Approve' => false,
+        'TranID' => true,
+        'TranDate' => true,
     ];
 
     protected static $entry_point = EndPoints::ALTER_TRAN;

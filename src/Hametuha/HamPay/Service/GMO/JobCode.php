@@ -38,4 +38,16 @@ class JobCode
      */
     const CANCEL = 'CANCEL';
 
+    const VOID = 'VOID';
+
+    const RETURN = 'RETURN';
+
+    const RETURNX = 'RETURNX';
+
+    const SAUTH = 'SAUTH';
+
+    const AUTHENTICATED = 'AUTHENTICATED';
+
+    const UNPROCESSED = 'UNPROCESSED';
+
 }

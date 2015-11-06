@@ -8,10 +8,20 @@ use Hametuha\HamPay\Service\GMO\Operation\Common;
 class SearchCard extends Common
 {
     protected static $params = [
-        'SiteID', 'SitePass', 'MemberID', 'SeqMode'
+        'SiteID' => true,
+        'SitePass' => true,
+        'MemberID' => true,
+        'SeqMode' => true,
+        'CardSeq' => false,
     ];
 
     protected static $result_params = [
-        'CardSeq', 'DefaultFlag', 'CardNo', 'Expire', 'DeleteFlag'
+        'CardSeq' => true,
+        'DefaultFlag' => false,
+        'CardName' => false,
+        'CardNo' => true,
+        'Expire' => true,
+        'HolderName' => false,
+        'DeleteFlag' => false,
     ];
 }

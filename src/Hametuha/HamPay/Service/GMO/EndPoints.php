@@ -171,7 +171,7 @@ class EndPoints
             throw new \Exception($message);
         }
         $param = [];
-        foreach ($keys as $key) {
+        foreach ($keys as $key => $required) {
             switch ($key) {
                 case 'SiteID':
                 case 'SitePass':

@@ -33,21 +33,39 @@ class JobCode
     const SALES = 'SALES';
 
     /**
-     * Cancelation
+     * Cancellation
      *
      */
     const CANCEL = 'CANCEL';
 
+    /**
+     * Invalid transaction
+     */
     const VOID = 'VOID';
 
-    const RETURN = 'RETURN';
+    /**
+     * Returned
+     */
+    const RETURN1 = 'RETURN';
 
+    /**
+     * Returned over 2 month
+     */
     const RETURNX = 'RETURNX';
 
+    /**
+     * Simple authorized
+     */
     const SAUTH = 'SAUTH';
 
+    /**
+     * Not sold(registered as 3D secure)
+     */
     const AUTHENTICATED = 'AUTHENTICATED';
 
+    /**
+     *
+     */
     const UNPROCESSED = 'UNPROCESSED';
 
 }

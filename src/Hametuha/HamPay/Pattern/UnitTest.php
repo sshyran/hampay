@@ -10,7 +10,7 @@ abstract class UnitTest extends \PHPUnit_Framework_TestCase
     /**
      * Set up test suite
      */
-    protected function setUp()
+    public static function setUpBeforeClass()
     {
         $base_dir = dirname(dirname(dirname(dirname(dirname(__FILE__)))));
         // Create log dir
@@ -32,9 +32,8 @@ abstract class UnitTest extends \PHPUnit_Framework_TestCase
     /**
      * Remove ePub directory
      */
-    protected function tearDown()
+    public static function tearDownAfterClass()
     {
 
     }
-
 }

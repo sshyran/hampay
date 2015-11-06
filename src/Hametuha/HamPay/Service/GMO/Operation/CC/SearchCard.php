@@ -3,6 +3,7 @@
 namespace Hametuha\HamPay\Service\GMO\Operation\CC;
 
 
+use Hametuha\HamPay\Service\GMO\EndPoints;
 use Hametuha\HamPay\Service\GMO\Operation\Common;
 
 class SearchCard extends Common
@@ -24,4 +25,6 @@ class SearchCard extends Common
         'HolderName' => false,
         'DeleteFlag' => false,
     ];
+
+    protected static $entry_point = EndPoints::SEARCH_CARD;
 }
